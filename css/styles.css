@@ -1,0 +1,299 @@
+/* Eric Meyer's CSS reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End reset */
+
+
+/* Styles */
+
+body{
+	font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #000;
+}
+.hidden{
+	display: none;
+}
+.main-header{
+	background-color: #FFDB20;
+	width: 980px;
+	height: 113px;
+	margin: 0 auto;
+	border-top: 1px solid #ffec77;
+	position: relative;
+	box-shadow: 0 0 30px 10px rgba( 0, 0, 0, 0.3 );
+}
+.main-header .logo{
+	margin: 5px 0 0 2px;
+}
+.main-header form{
+	position: absolute;
+	top: 20px;
+	right: 210px;
+}
+.main-header input:first-child{
+	width: 245px;
+	height: 30px;
+	border: 1px solid #d1cab1;
+	background: url('../img/Search.png') no-repeat 5px 4px, #fff;
+}
+.main-header input:last-child{
+	width: 77px;
+	height: 30px;
+	padding: 0 8px;
+	border-radius: 0 2px 2px 0;
+	font-size: 11px;
+	font-weight: 700;
+	background-color: #000;
+	color: #fff;
+	border-color: #212428;
+	border-left: none;
+}
+.main-nav ul{
+	border-top: 3px solid #ffe562;
+	height: 31px;
+	background-color: #FFD005;
+}
+.main-nav li{
+	display: inline-block;
+	padding: 0 10px;
+	height: 30px;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 31px;
+}
+.main-nav li:not(:first-child){
+	text-shadow: 0 1px 1px #fff;
+}
+.main-nav a{
+	text-decoration: none;
+	color: #000;
+}
+.main-nav li:first-child{
+	background-color: #262626;
+	border: 2px solid #000;
+	margin-left: 10px;
+	padding: 0 16px;
+}
+.main-nav li:first-child a{
+	color: #fff;
+}
+.connect{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.connect ul{
+	width: 145px;
+	height: 67px;
+	border: 1px solid #f9e655;
+	background-color: #FFCF04;
+	padding: 13px 10px 0 10px;
+	box-shadow: -4px -2px 4px rgba(136, 136, 136, 0.2);
+}
+.connect li:not(.social){
+	padding: 5px 0 2px 10px;
+	text-align: left;
+}
+.connect .social img{
+	vertical-align: bottom;
+}
+.connect ul a{
+	font-size: 11px;
+	color: #000;
+}
+.connect li:not(:first-child){
+	display: inline-block;
+}
+.connect li:not(.social)::before{
+	content: url('../img/Puce.png');
+	margin-right: 5px;
+}
+.connect div{
+	width: 164px;
+	height: 31px;
+	background-color: #FFCE00;
+	text-align: center;
+	border-bottom: 1px solid #ca9a00;
+	border-left: 1px solid #ca9a00;
+}
+.connect div a{
+	color: #000;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 32px;
+	text-shadow: 0 1px 1px #fff;
+	margin: 0 auto;
+}
+.connect div a::after{
+	content: url('../img/Dropdown.png');
+	margin-left: 10px;
+}
+section{
+	width: 916px;
+	background-color: #fff;
+	margin: 5px auto 0 auto;
+	padding: 24px 32px 30px 32px;
+}
+section header{
+	border-bottom: 1px solid #A6B2C8;
+	width: 620px;
+	padding-top: 30px;
+	position: relative;
+}
+h2{
+	font-size: 26px;
+	color: #dc1034;
+	margin: 20px 0 10px 0;
+}
+h3{
+	font-size: 20px;
+	color: #dc1034;
+	margin: 30px 0 10px 0;
+}
+.nav-ariane-string{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid #d6d6d4;
+}
+.nav-ariane-string li{
+	display: inline;
+}
+.nav-ariane-string li:not(:first-child)::before{
+	content: url('../img/Puce2.png');
+}
+.nav-ariane-string li:first-child{
+	padding-left: 0;
+}
+.nav-ariane-string li:last-child a{
+	color: #999;
+}
+.nav-ariane-string li a{
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 22px;
+	padding: 5px 6px;
+}
+.nav-cv li{
+	padding: 0 6px;
+	display: inline-block;
+	border-top: 1px solid #A6B2C8;
+	border-right: 1px solid #A6B2C8;
+}
+.home{
+	border-left: 1px solid #A6B2C8;
+	border-radius: 3px 0 0 0;
+	float: left;
+	border-bottom: 1px solid #fff;
+}
+.nav-cv li:not(.home){
+	background-color: #E6E9EE;
+}
+section a{
+	text-decoration: none;
+	color: #005ea8;
+	font-weight: 700;
+	line-height: 26px;
+}
+section a:hover{
+	color: #dc1034;
+}
+.homelogo{
+	width: 14px;
+	height: auto;
+	position: relative;
+	top: 2px;
+}
+article {
+	width: 620px;
+}
+img.face{
+	margin: 0 20px 30px 0;
+	float: left;
+}
+.present table{
+	margin-top: 30px;
+}
+.etud{
+	clear: both;
+}
+.rate{
+	margin: 10px 8px 0 0;
+}
+th{
+	color: #888;
+	text-align: left;
+	padding-right: 20px;
+	padding-bottom: 5px;
+}
+td{
+	padding-bottom: 5px;
+}
+td a{
+	line-height: 1;
+	font-weight: 400;
+}
+.compl li::before{
+	content: "- ";
+}
+.compl li{
+	margin-bottom: 5px;
+}
+footer{
+	width: 980px;
+	margin: 0 auto;
+	border-top: 4px solid #fc0;
+}
+footer img{
+	float: right;
+	margin: 20px 0;
+}
